@@ -3,10 +3,10 @@
 name: CheckUpdate
 
 # Controls when the workflow will run
-  repository_dispatch:
-  workflow_dispatch:
-  schedule:
-    - cron: '*/1 * * * *'
+   repository_dispatch:
+   workflow_dispatch:
+   schedule:
+     - cron: '*/1 * * * *'
 env:
   REPO_URL: https://github.com/lyrnstsen/Infinix.git
   REPO_BRANCH: master
