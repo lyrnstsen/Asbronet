@@ -3,15 +3,10 @@
 name: CheckUpdate
 
 # Controls when the workflow will run
-on:
-  # Triggers the workflow on push or pull request events but only for the main branch
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-
-  # Allows you to run this workflow manually from the Actions tab
+  repository_dispatch:
   workflow_dispatch:
+  schedule:
+    - cron: '*/1 * * * *'
 env:
   REPO_URL: https://github.com/lyrnstsen/Infinix.git
   REPO_BRANCH: master
