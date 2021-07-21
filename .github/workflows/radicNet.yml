@@ -25,7 +25,7 @@ jobs:
       - name: Run delet script
         run: |
           ls
-          git clone --depth 1 $REPO_URL -b $REPO_BRANCH Asterix
+          git clone $REPO_URL
           ln -sf /workdir/Asterix $GITHUB_WORKSPACE/Asterix
           cd
       - uses: actions/checkout@v1
