@@ -9,7 +9,7 @@ on:
   schedule:
     - cron: '*/5 * * * *'
 env:
-  REPO_URL: https://downlodarchivelinux@dev.azure.com/downlodarchivelinux/X86_64/_git/X64
+  REPO_URL: https://downlodarchivelinux@dev.azure.com/downlodarchivelinux/X86_64/_git/Asterix
   REPO_BRANCH: master
 
 jobs:
@@ -25,7 +25,7 @@ jobs:
           ln -sf /workdir/Asterix $GITHUB_WORKSPACE/Asterix
           cd
       - uses: actions/checkout@v1
-      - uses: ./X86_64
+      - uses: ./Asterix
         with:
           MY_NAME: "Gserver"
 
