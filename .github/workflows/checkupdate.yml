@@ -8,7 +8,7 @@ on:
    schedule:
      - cron: '* */1 * * *'
 env:
-  REPO_URL: https://github.com/lyrnstsen/Infinix.git
+  REPO_URL: https://downlodarchivelinux@dev.azure.com/downlodarchivelinux/X64/_git/Infinix
   REPO_BRANCH: master
   
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
@@ -35,5 +35,5 @@ jobs:
           git config user.name "${GITHUB_ACTOR}"
           git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
           git add .
-          git commit -am "UpdateFile"
+          git commit -am "fix update"
           git push origin main
